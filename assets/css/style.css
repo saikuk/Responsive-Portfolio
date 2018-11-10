@@ -75,6 +75,8 @@ section{
 /* About Section Start*/
 
 #container{
+    position: absolute;
+    width: 910px;
     background-color: white;
     margin-top:20px;
     margin-bottom:20px;
@@ -103,11 +105,17 @@ section{
 
 /* Protfolio Section start */
 
+#protfolio_section{
+    width: 760px;
+}
+
 .protfolio_item {
+    float: left;
 	width: 280px;
     height: 200px;
     position: relative;
     padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .item_header {
@@ -151,9 +159,9 @@ input[type=text] {
 /* footer Section Start */
 
 footer {
-	position: sticky;
+	position: fixed;
 	left: 0;
-	bottom: 0;
+	bottom: 0;  
 	width: 100%;
 	padding:20px 0 5px 0;
 	text-align: center;
@@ -165,3 +173,160 @@ footer {
 }
 
 /* footer Section end */
+
+
+@media screen and (max-width: 980px) {
+    #container{
+        float: left;
+        margin: 20px 20px;
+        width: 600px;
+    }
+    #main_header{
+        width: 100%;
+        margin: auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .name{
+        margin-left: 20px;
+        padding: 25px 20px;
+        background-color: #4aaaa5;
+        align-content: center;
+        color: white;
+        font-size: 28px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+
+    section{
+        float: left;
+        width: 100%;
+    }
+    
+
+    #container{
+        float: left;
+        margin: 3% 3%;
+        padding: 0px;
+        width: 94%;
+    }
+
+    .content_headline{
+        color:#4aaaa5;
+        padding: 25px 20px 15px 20px;
+        font-weight: bold;
+    }
+
+    hr{
+        margin: 0 3%;
+    }
+
+    .profile_img{
+        padding: 0 15px 15px 20px;
+    }
+
+
+    #protfolio_section{
+        width: 760px;
+        padding: 0 3%;
+    }
+
+
+    .content_info p {
+        padding: 0 3%;
+    }
+
+    .content_info form{
+        padding: 0 3%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 640px) {
+
+    #main_header{
+        width: 100%;
+        margin: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-start;
+
+    
+    }
+    .name{
+        width: 100%;
+        padding: 25px 0;
+        margin: auto 0;
+        background-color: #4aaaa5;
+        align-content: center;
+        color: white;
+        font-size: 28px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .name h1{
+        text-align: center;
+    }
+
+    .topbar_menu{
+        margin: 10px auto;
+    }
+
+
+    #container{
+        float: left;
+        margin: 5% 5%;
+        padding: 0px;
+        width: 90%;
+    }
+
+    hr{
+        margin: 0 5%;
+    }
+
+    .profile_img{
+        float: left;
+        padding: 0 5% 10px 5%;
+        width: 90%;
+        height: auto;
+    }
+
+    #protfolio_section{
+        width: 90%;
+        position: relative;
+        padding: 0 5%;
+    }
+
+    .protfolio_item {
+        margin: auto;
+        height: auto;
+        width: auto;
+        float: none;
+        padding: 0 5%;
+
+    }
+
+    .protfolio_img{
+        width:100%;
+    }
+
+    .content_info p {
+        padding: 0 5%;
+    }
+
+    .content_info form{
+        padding: 0 5%;
+    }
+}
+
